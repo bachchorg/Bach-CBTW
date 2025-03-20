@@ -64,7 +64,7 @@ export class CreateChallenge {
         this.selectPoints(points);
         this.enterHdwsthis(hdwsthis)
         this.clickSubmit();
-        // mainPage.navigatetoMyChallenges();
+        mainPage.navigatetoMyChallenges();
     }
 
     }

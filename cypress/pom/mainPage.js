@@ -3,7 +3,7 @@ export class MainPage {
         challengesDropDownmenu: () => cy.get('.navbarDropdownMenuLink'), 
         solvechallengesTxt: () => cy.contains('Solve Challenges'),
         createchallengeTxt: () => cy.contains('Create Challenge'),
-        mychallengesTxt: () => cy.contains('My Challenges')
+        mychallengesTxt: () => cy.contains('My Challenges'),
     };
 
     navigatetoCreateChallenge() {
@@ -16,6 +16,10 @@ export class MainPage {
         this.elements.mychallengesTxt().invoke('attr','href').then((mychallengesUrl) => {
             cy.visit(mychallengesUrl)
         })
+    }
+
+    logout() {
+        cy.visit('/user/logout', {timeout: 20000})
     }
 
     
