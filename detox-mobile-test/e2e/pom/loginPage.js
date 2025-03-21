@@ -1,4 +1,4 @@
-class LoginPage {
+export class LoginPage {
     async enterUsername(username) {
       await element(by.id('usernameInput')).typeText(username);
     }
@@ -11,5 +11,3 @@ class LoginPage {
       await element(by.id('loginButton')).tap();
     }
   }
-  
-  module.exports = new LoginPage();

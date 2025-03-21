@@ -1,4 +1,4 @@
-class PortfolioPage {
+export class PortfolioPage {
   async isPortfolioVisible() {
     await waitFor(element(by.id('portfolioScreen')))
       .toBeVisible()
@@ -9,5 +9,3 @@ class PortfolioPage {
     await expect(element(by.id('portfolioList'))).toBeVisible();
   }
 }
-
-module.exports = new PortfolioPage();
