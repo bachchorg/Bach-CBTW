@@ -30,7 +30,7 @@ pipeline {
          stage('Run Cypress Tests on BrowserStack') {
             steps {
                 dir('ui-e2e-test') {
-                    sh 'browserstack-cypress run'
+                    sh 'browserstack-cypress run --sync'
                 }
             }
      }
