@@ -1,0 +1,24 @@
+{
+    "auth": {
+        "username": "nguyenbach_5npG8H",
+        "access_key": "bzDMBvbzUPLMqUuL31hi"
+    },
+    "browsers": [{
+        "browser": "chrome",
+        "os": "Windows 10",
+        "versions": ["latest", "latest - 1"]
+      },
+      {
+        "browser": "edge",
+        "os": "OS X Catalina",
+        "versions": ["latest"]
+      }
+    ],
+    "run_settings": {
+      "cypress_config_file": "./cypress.config.js",
+      "cypress_version": "12.7.1",
+      "project_name": "UI E2E test",
+      "build_name": "ui_e2e_test",
+      "parallels": "3"
+    }
+  }

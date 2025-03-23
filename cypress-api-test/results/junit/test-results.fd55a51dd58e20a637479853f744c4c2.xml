@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.747" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-23T05:08:01" tests="0" file="cypress/e2e/getUsers.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing - Users Endpoint" timestamp="2025-03-23T05:08:01" tests="3" time="1.744" failures="0">
+    <testcase name="API Testing - Users Endpoint should return user data a correct position" time="0.747" classname="should return user data a correct position">
+    </testcase>
+    <testcase name="API Testing - Users Endpoint should return an error for an empty position" time="0.455" classname="should return an error for an empty position">
+    </testcase>
+    <testcase name="API Testing - Users Endpoint should return an error for an invalid position" time="0.492" classname="should return an error for an invalid position">
+    </testcase>
+  </testsuite>
+</testsuites>

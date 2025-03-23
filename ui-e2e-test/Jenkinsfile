@@ -1,0 +1,44 @@
+pipeline {
+    agent any 
+    tools {
+        nodejs('23.10.0')
+    }
+    environment {
+        CYPRESS_CACHE_FOLDER = "${WORKSPACE}/.cache/Cypress"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/bachchorg/Bach-CBTW'
+            }
+        }
+
+        stage('setup') {
+         steps {
+            dir('ui-e2e-test') {
+            browserstack(credentialsId: 'f047c443-864f-46ee-9bae-b7e8b27583ab') {
+                sh 'npm install'
+                sh 'npm install cypress@12.17.1 --save-dev --force'
+                sh 'npm install -g browserstack-cypress-cli'
+            }
+            }
+         }
+         }
+
+
+         stage('Run Cypress Tests on BrowserStack') {
+            steps {
+                dir('ui-e2e-test') {
+                    sh 'browserstack-cypress run'
+                }
+            }
+     }
+  }  
+
+    post {
+        always {
+            cleanWs()  // Clean workspace after build
+        }
+    }
+}

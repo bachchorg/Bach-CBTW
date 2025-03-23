@@ -1,0 +1,10 @@
+{
+    "event": "CTFlearn",
+    "title": "Bach Test 123",
+    "flag": "CTFlearn{{}Test{}}",
+    "description": "This is a description",
+    "image": "images.jpeg",
+    "category": "Binary",
+    "points": "10",
+    "hdwsthis": "I don't know how to solve this to be honest"
+  }

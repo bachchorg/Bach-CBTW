@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.317" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-23T05:08:07" tests="0" file="cypress/e2e/updateUsers.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API User Update Test" timestamp="2025-03-23T05:08:07" tests="4" time="2.313" failures="0">
+    <testcase name="API User Update Test should successfully update user data" time="0.905" classname="should successfully update user data">
+    </testcase>
+    <testcase name="API User Update Test should successfully update user data without job" time="0.453" classname="should successfully update user data without job">
+    </testcase>
+    <testcase name="API User Update Test should successfully update user without name" time="0.451" classname="should successfully update user without name">
+    </testcase>
+    <testcase name="API User Update Test should successfully update user with empty request body" time="0.444" classname="should successfully update user with empty request body">
+    </testcase>
+  </testsuite>
+</testsuites>

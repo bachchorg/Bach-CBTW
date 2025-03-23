@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test:detox:ios": "detox test --configuration ios.sim.debug", 
+    "test:detox:android": "detox test --configuration android.emu.debug"
+  },
+  "devDependencies": {
+    "detox": "^20.35.0"
+  }
+}

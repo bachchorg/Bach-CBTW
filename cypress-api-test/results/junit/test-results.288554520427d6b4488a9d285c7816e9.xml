@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.405" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-23T05:08:04" tests="0" file="cypress/e2e/login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Login Test" timestamp="2025-03-23T05:08:04" tests="3" time="1.401" failures="0">
+    <testcase name="API Login Test should successfully log in via API when enter valid credentials" time="0.469" classname="should successfully log in via API when enter valid credentials">
+    </testcase>
+    <testcase name="API Login Test should not log in via API when enter invalid username and password" time="0.436" classname="should not log in via API when enter invalid username and password">
+    </testcase>
+    <testcase name="API Login Test should not log in via API when enter empty credentials" time="0.443" classname="should not log in via API when enter empty credentials">
+    </testcase>
+  </testsuite>
+</testsuites>
