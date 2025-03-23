@@ -15,6 +15,10 @@
       }
     ],
     "run_settings": {
+    "npm_dependencies": {
+        "@faker-js/faker": "^9.6.0",
+        "cypress-file-upload": "^5.0.8"
+      },
       "cypress_config_file": "./cypress.config.js",
       "cypress_version": "12.7.1",
       "project_name": "UI E2E test",
