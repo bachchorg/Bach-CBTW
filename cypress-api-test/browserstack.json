@@ -1,7 +1,7 @@
 {
     "auth": {
-      "username": "nguyenbach_5npG8H",
-      "access_key": "bzDMBvbzUPLMqUuL31hi"
+        "username": "nguyenbach_5npG8H",
+        "access_key": "bzDMBvbzUPLMqUuL31hi"
     },
     "browsers": [{
         "browser": "chrome",
@@ -9,9 +9,9 @@
         "versions": ["latest", "latest - 1"]
       },
       {
-        "browser": "edge",
-        "os": "OS X Catalina",
-        "versions": ["latest"]
+        "browser": "firefox",
+        "os": "OS X Mojave",
+        "versions": ["latest", "latest - 1"]
       }
     ],
     "run_settings": {
