@@ -1,7 +1,7 @@
 {
     "auth": {
-        "username": "bachnguyen_WBTdtk",
-        "access_key": "VDKcMLb9qrysrRG1Drbn"
+        "username": "bachnguyen_nJ0G3j",
+        "access_key": "hbozGrHom9serSPdpkki"
     },
     "browsers": [{
         "browser": "chrome",
@@ -11,7 +11,7 @@
       {
         "browser": "firefox",
         "os": "OS X Mojave",
-        "versions": ["latest", "latest - 1"]
+        "versions": ["latest"]
       }
     ],
     "run_settings": {
@@ -19,6 +19,6 @@
       "cypress_version": "12.7.1",
       "project_name": "API test",
       "build_name": "api_test",
-      "parallels": "3"
+      "parallels": "2"
     }
   }

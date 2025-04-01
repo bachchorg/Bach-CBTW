@@ -20,7 +20,6 @@ pipeline {
             browserstack(credentialsId: 'f047c443-864f-46ee-9bae-b7e8b27583ab') {
                 sh 'npm install'
                 sh 'npm install cypress@12.17.1 --save-dev --force'
-                sh 'npm install mocha-junit-reporter --save-dev'
                 sh 'npm install -g browserstack-cypress-cli'
             }
             }
@@ -30,7 +29,7 @@ pipeline {
          stage('Run Cypress Tests on BrowserStack') {
             steps {
                 dir('cypress-api-test') {
-                    sh 'browserstack-cypress run --reporter mocha-junit-reporter'
+                    sh 'browserstack-cypress run --sync'
                 }
             }
         }
