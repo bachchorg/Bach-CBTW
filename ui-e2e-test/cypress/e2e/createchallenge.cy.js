@@ -4,9 +4,10 @@ import {CreateChallenge} from '../pom/createchallengePage';
 import { faker } from '@faker-js/faker';
 
 function generateValidName() {
+    const Faker = new faker()
     let name;
     do {
-      name = faker.person.fullName(); // Generates a random name
+      name = Faker.person.fullName(); // Generates a random name
     } while (name.length < 4 || name.length > 64);
     return name;
   }
