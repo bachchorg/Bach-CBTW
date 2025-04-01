@@ -7,11 +7,6 @@
         "browser": "chrome",
         "os": "Windows 10",
         "versions": ["latest", "latest - 1"]
-      },
-      {
-        "browser": "firefox",
-        "os": "OS X Mojave",
-        "versions": ["latest"]
       }
     ],
     "run_settings": {

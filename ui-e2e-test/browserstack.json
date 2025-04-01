@@ -7,11 +7,6 @@
         "browser": "chrome",
         "os": "Windows 10",
         "versions": ["latest", "latest - 1"]
-      },
-      {
-        "browser": "edge",
-        "os": "OS X Catalina",
-        "versions": ["latest"]
       }
     ],
     "run_settings": {
