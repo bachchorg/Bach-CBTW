@@ -4,10 +4,12 @@ import {CreateChallenge} from '../pom/createchallengePage';
 import { faker } from '@faker-js/faker';
 
 function generateValidName() {
-    const Faker = new faker()
+    const uuid = () => Cypress._.random(0, 1e6)
+    const id = uuid()
+    const testname = `test${id}`
     let name;
     do {
-      name = Faker.person.fullName(); // Generates a random name
+      name = testname; // Generates a random name
     } while (name.length < 4 || name.length > 64);
     return name;
   }
